@@ -131,7 +131,10 @@ canvas {
   max-width: 360px;
   height: auto;
   border-radius: 16px;
-  background: #ddd;
+  background: url("wallpaper.png");
+  background-size: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 @media (max-width: 900px) {
