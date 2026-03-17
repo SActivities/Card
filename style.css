@@ -151,7 +151,7 @@ select {
   color: #999;
 }
 select:has(option:not([disabled]):checked) {
-  color: #111;
+  color: #000000;
 }
 input::placeholder {
   color: #999;

@@ -1,3 +1,5 @@
+let selectedReference = "";
+
 let selectedImage = null;
 
 function selectDesign(img) {
@@ -17,6 +19,7 @@ function generate() {
   const ctx = canvas.getContext("2d");
 
   const mainText = document.getElementById("textInput").value;
+  const refText = selectedReference;
   const toText = document.getElementById("toInput")?.value || "";
   const senderText = document.getElementById("fromInput")?.value || "";
   const color = document.getElementById("colorInput").value;
@@ -43,7 +46,7 @@ function generate() {
       ctx.fillText(
         toText,
         canvas.width / 2,
-        centerY - 200
+        centerY - 170
       );
     }
 
@@ -57,12 +60,21 @@ function generate() {
       lineHeight
     );
 
+    if (refText) {
+    ctx.font = `26px ${font}`;
+    ctx.fillText(
+    refText,
+    canvas.width / 2,
+    centerY + 100
+    );
+    }
+
     ctx.font = `bold 48px ${font}`;
     if (senderText) {
       ctx.fillText(
         senderText,
         canvas.width / 2,
-        centerY + 200
+        centerY + 190
       );
     }
   };
@@ -117,6 +129,10 @@ function setPresetText(text) {
 document.getElementById("fontSelect").addEventListener("change", generate);
 
 document.getElementById("presetTextSelect").addEventListener("change", function () {
-  document.getElementById("textInput").value = this.value;
+  const selectedOption = this.options[this.selectedIndex];
+
+  document.getElementById("textInput").value = selectedOption.value;
+  selectedReference = selectedOption.dataset.ref || "";
+
   generate();
 });
