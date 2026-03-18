@@ -1,5 +1,5 @@
+document.getElementById("colorInput").value = "#000000";
 let selectedReference = "";
-
 let selectedImage = null;
 
 function selectDesign(img) {

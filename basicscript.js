@@ -1,3 +1,4 @@
+document.getElementById("colorInput").value = "#000000";
 let selectedImage = null;
 
 function selectDesign(img) {
