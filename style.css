@@ -8,7 +8,10 @@
 body {
   margin: 0;
   background: #6A8769;
-  color: #ffffff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -18,7 +21,7 @@ header {
   align-items: center;
 
   padding: 20px;
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -155,4 +158,90 @@ select:has(option:not([disabled]):checked) {
 }
 input::placeholder {
   color: #999;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.card-option {
+  background: url("eidwallpaper.png");
+  background-size: cover;
+  color: #1A341F;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card-option:hover {
+  transform: translateY(-5px);
+  border-color: #000;
+}
+
+.card-option h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.card-option p {
+  color: #666;
+  font-size: 15px;
+}
+
+.footer {
+  margin-top: 40px;
+  background: #3b4b3b;
+  color: #fff;
+  padding: 25px 15px;
+  text-align: center;
+  border-top: 2px solid #BD6F4A;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #BD6F4A;
+  transition: 0.2s;
+}
+
+.footer-links i {
+  color: #BD6F4A;
+  font-size: 14px;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+}
+
+.footer-contact a {
+  color: #BD6F4A;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+}
+.footer-contact i {
+  margin-right: 6px;
 }
