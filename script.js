@@ -107,8 +107,28 @@ function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight) {
   });
 }
 
-function download() {
+async function download() {
   const canvas = document.getElementById("canvas");
+  if (navigator.share && navigator.canShare) {
+    canvas.toBlob(async (blob) => {
+      const file = new File([blob], "تصميمك.png", { type: "image/png" });
+      
+      try {
+        await navigator.share({
+          files: [file],
+          title: 'تصميمك',
+          text: 'تم إنشاء التصميم بنجاح',
+        });
+      } catch (err) {
+        console.log("Share failed, falling back to download.");
+        fallbackDownload(canvas);
+      }
+    });
+  } else {
+    fallbackDownload(canvas);
+  }
+}
+function fallbackDownload(canvas) {
   const link = document.createElement("a");
   link.download = "تصميمك.png";
   link.href = canvas.toDataURL("image/png");
