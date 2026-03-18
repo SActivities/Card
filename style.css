@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background: #6A8769;
+  background: linear-gradient(200deg, #3b4b3b, #6A8769);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -167,12 +167,14 @@ input::placeholder {
   padding: 30px;
   max-width: 500px;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .card-option {
-  background: url("eidwallpaper.png");
+   background: linear-gradient(300deg, #a8cca6, #304230);
   background-size: cover;
-  color: #1A341F;
+  color: #ffffff;
   padding: 30px 20px;
   border-radius: 15px;
   text-align: center;
@@ -190,17 +192,17 @@ input::placeholder {
 
 .card-option h2 {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .card-option p {
-  color: #666;
+  color: #1A341F;
   font-size: 15px;
 }
 
 .footer {
   margin-top: 40px;
-  background: #3b4b3b;
+  background: #273527;
   color: #fff;
   padding: 25px 15px;
   text-align: center;
@@ -277,5 +279,9 @@ input::placeholder {
   .footer-links,
   .footer-contact {
     text-align: center;
+  }
+
+  .cards-container {
+  grid-template-columns: 1fr; 
   }
 }
