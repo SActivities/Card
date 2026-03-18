@@ -116,7 +116,6 @@ async function download() {
       try {
         await navigator.share({
           files: [file],
-          title: 'تصميمك',
         });
       } catch (err) {
         console.log("Share failed, falling back to download.");
