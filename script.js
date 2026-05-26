@@ -36,7 +36,7 @@ function generate() {
     const centerY = canvas.height / 2;
     const padding = 60;
     const maxWidth = canvas.width - padding * 2;
-    const lineHeight = 60;
+    const lineHeight = 85;
 
     ctx.font = `bold 48px ${font}`;
     if (toText) {
