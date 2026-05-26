@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(200deg, #3b4b3b, #6A8769);
+  background: linear-gradient(200deg, #330910, #571520);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ header {
   align-items: center;
 
   padding: 20px;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -29,7 +29,7 @@ header h1 {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
-  color: #1A341F;
+  color: #a0394a;
 }
 .logo {
   position: absolute;
@@ -116,12 +116,12 @@ button {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background: #BD6F4A;
+  background: #962135;
   color: #fff;
 }
 
 button.download {
-  background: #2e7d32;
+  background: #571520;
 }
 
 .canvas-wrapper {
@@ -172,7 +172,7 @@ input::placeholder {
 }
 
 .card-option {
-   background: linear-gradient(300deg, #a8cca6, #304230);
+   background: linear-gradient(300deg, #962135, #571520);
   background-size: cover;
   color: #ffffff;
   padding: 30px 20px;
@@ -196,17 +196,17 @@ input::placeholder {
 }
 
 .card-option p {
-  color: #1A341F;
+  color: #ff879b;
   font-size: 15px;
 }
 
 .footer {
   margin-top: 40px;
-  background: #273527;
-  color: #fff;
+  background: #35060e;
+  color: #ffffff;
   padding: 25px 15px;
   text-align: center;
-  border-top: 2px solid #BD6F4A;
+  border-top: 2px solid #962135;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
 }
 
@@ -231,12 +231,12 @@ input::placeholder {
 }
 
 .footer-links a:hover {
-  color: #BD6F4A;
+  color: #a0394a;
   transition: 0.2s;
 }
 
 .footer-links i {
-  color: #BD6F4A;
+  color: #a0394a;
   font-size: 14px;
 }
 
@@ -248,7 +248,7 @@ input::placeholder {
 }
 
 .footer-contact a {
-  color: #BD6F4A;
+  color: #a0394a;
   text-decoration: none;
   margin-left: 6px;
 }
@@ -266,7 +266,7 @@ input::placeholder {
 
 .footer-social a {
     font-size: 30px;
-    color: #ffc9b0;
+    color: #a0394a;
     margin: 10px;
 }
 
