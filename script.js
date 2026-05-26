@@ -132,7 +132,7 @@ function setPresetText(text) {
   if (el) el.addEventListener("input", generate);
 });
 
-ddocument.getElementById("fontSelect").addEventListener("change", generate);
+document.getElementById("fontSelect").addEventListener("change", generate);
 
 document.getElementById("presetTextSelect").addEventListener("change", function () {
   const selectedOption = this.options[this.selectedIndex];

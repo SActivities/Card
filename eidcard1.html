@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جمعية جذورنا الثقافية </title>
+  <link rel="icon" href="logo2.png" type="image/png"> 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>صمّم بطاقتك</h1>
+  </header>
+
+  <main class="container">
+
+    <section class="design-section">
+      <h3>اختر التصميم</h3>
+      <div class="designs">
+        <img src="eiddesign11.png" onclick="selectDesign(this)">
+      </div>
+    </section>
+
+    <section class="editor-section">
+
+      <label class="color-label">من ( اختياري )</label>
+      <input
+       type="text"
+       id="fromInput"
+       placeholder="اكتب اسم المرسل هنا"
+       />
+
+      <label class="font-label">اختر نوع الخط</label>
+      <select id="fontSelect">
+      <option value="Amiri" disabled selected>اختر نوع النص هنا</option>
+      <option value="Cairo">Cairo</option>
+      <option value="Amiri">Amiri</option>
+      <option value="Tajawal">Tajawal</option>
+      <option value="Changa">Changa</option>
+      </select>
+
+     <label class="color-label">اختر لون النص</label>
+      <input
+        type="color"
+        id="colorInput"
+        value="#000000"
+      />
+      
+      <div class="buttons">
+        <button onclick="generate()">معاينة</button>
+        <button class="download" onclick="download()">تحميل</button>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="canvas" width="675" height="1200"></canvas>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="basicscript.js"></script>
+</body>
+</html>
